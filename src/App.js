@@ -8,6 +8,7 @@ import './App.css';
 class App extends Component {
     state = {
         text: '',
+        
     };
 
     componentDidMount() {
