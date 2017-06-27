@@ -8,7 +8,7 @@ const initialState = {
     data: [],
     error: null,
     isFetched: false
-}
+};
 
 export default (state = initialState, action) => {
     switch (action.type) {
@@ -21,7 +21,7 @@ export default (state = initialState, action) => {
                 ...state,
                 data: action.data,
                 isFetched: true
-            }
+            };
         case FETCH_TODOS_ERROR:
             return {
                 ...state,
@@ -55,7 +55,7 @@ export default (state = initialState, action) => {
                 data: state.data.map(
                     todo => (todo.id === action.id ? {...todo, completed: !todo.completed} : todo),
                 )
-            }
+            };
         case DELETED_TODO:
             return {
                 ...state,

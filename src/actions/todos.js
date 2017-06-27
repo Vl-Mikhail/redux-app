@@ -99,6 +99,7 @@ export function deletedTodo(id) {
     }
 }
 
+
 export function deletedAllCompletedTodo() {
     return {
         type: DELETED_ALL_COMPLETED_TODO,
